@@ -1,63 +1,44 @@
-.search-ico {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-.back-ico {
-    display: inline-block;
-    vertical-align: middle;
-}
-
-#top{
+header {
     width: 100%;
-    display: flex;
-    justify-content: space-between;
+    overflow-x: scroll;
+    padding: 10px;
+    box-sizing: border-box;
 }
 
-#filter{
-    width: 100%;
-}
 
 #filter ul {
     list-style: none;
     display: flex;
+    padding: 0;
 }
 
-#filter ul li {
+header::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+header {
+    -ms-overflow-style: none;
+    /* IE and Edge */
+    scrollbar-width: none;
+    /* Firefox */
+}
+
+#filter ul li{
     
-    border: 1px solid white;
+    border: 1px solid rgb(65, 65, 65);
     padding: 7px 25px;
     border-radius: 20px;
     font-size: 16px;
     margin:0 10px;
 }
 
-#filter ul li:hover {
+ .selected {
     cursor: pointer;
-    color: #04e413;
-    border: 1px solid var(--GN500, #00AA5B);
-    background-color: rgba(46, 135, 40, 0.18);
+    color: rgb(79, 197, 71);
+    border: 1px solid rgb(64, 141, 59) !important;
+    background-color: rgba(144, 236, 137, 0.18);
+    font-weight: 500;
 }
 
 
-
-
-#filter ul li a {
-    text-decoration: none;
-    color: white;
-}
-
-#filter ul li a:active {
-    cursor: pointer;
-    color: #04e413;
-    border: 1px solid var(--GN500, #00AA5B);
-    background-color: rgba(46, 135, 40, 0.18);
-}
-
-header{
-    width: 95%;
-    height: 20vh;
-    margin:0 auto;
-    background-color: firebrick;
-    position: fixed;
-}
